@@ -21,13 +21,13 @@
         "docs": "https://docs.flarum.org/"
     },
     "require": {
-        "flarum/core": "^2.0.0-beta.2",
         "flarum/approval": "*",
         "flarum/bbcode": "*",
+        "flarum/core": "^2.0.0-beta.2",
         "flarum/emoji": "*",
-        "flarum/lang-english": "*",
         "flarum/flags": "*",
         "flarum/gdpr": "*",
+        "flarum/lang-english": "*",
         "flarum/likes": "*",
         "flarum/lock": "*",
         "flarum/markdown": "*",
@@ -39,8 +39,19 @@
         "flarum/sticky": "*",
         "flarum/subscriptions": "*",
         "flarum/suspend": "*",
-        "flarum/tags": "*"
+        "flarum/tags": "*",
+        "my-vendor/nsfw": "@dev",
+        "justoverclock/flarum-ext-welcomebox": "*"
     },
+
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/my-vendor-nsfw"
+        }
+    ],
+
+
     "config": {
         "preferred-install": "dist",
         "sort-packages": true

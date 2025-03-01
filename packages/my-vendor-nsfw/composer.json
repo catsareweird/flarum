@@ -1,0 +1,33 @@
+{
+    "name": "my-vendor/nsfw",
+    "description": "Adds a Not Safe For Work (NSFW) tag and access control to Flarum posts.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.8",
+        "flarum/tags": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyVendor\\Nsww\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "NSWW",
+            "icon": {
+                "name": "fas fa-exclamation-triangle",
+                "backgroundColor": "#ff8500",
+                "color": "#ffffff"
+            },
+            "category": "feature"
+        },
+         "flarum-cli": {
+            "modules": {
+                "backend": true,
+                "frontend": true,
+                "migrations": true
+            }
+        }
+    }
+}

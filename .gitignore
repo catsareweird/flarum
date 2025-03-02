@@ -9,3 +9,4 @@ core
 studio.json
 composer.lock
 
+/flarum-ext
